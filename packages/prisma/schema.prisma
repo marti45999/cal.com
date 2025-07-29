@@ -2412,3 +2412,19 @@ model RolePermission {
   // TODO: come back to this with indexs.
   @@index([action])
 }
+
+model City {
+  id   Int    @id @default(autoincrement())
+  name String
+  lat  Float
+  lng  Float
+}
+
+model TravelTimeCache {
+  id      Int  @id @default(autoincrement())
+  cityA   Int
+  cityB   Int
+  minutes Int
+
+  @@unique([cityA, cityB])
+}
