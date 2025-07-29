@@ -1,0 +1,12 @@
+{
+  "name": "@calcom/geo-planner",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.ts",
+  "files": ["**/*"],
+  "dependencies": {
+    "@calcom/trpc": "*",
+    "@calcom/prisma": "*",
+    "zod": "^3.22.4"
+  }
+}
